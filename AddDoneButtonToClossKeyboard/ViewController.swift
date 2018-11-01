@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.doneClicked))
         toolBar.setItems([flexiableSpace, doneButton], animated: false)
         nameTextField.inputAccessoryView = toolBar
+        phoneNumberTextField.inputAccessoryView = toolBar
     }
     
     @objc func doneClicked() {
